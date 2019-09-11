@@ -214,9 +214,9 @@ if [ "$FAILED" == "Y" ]; then
 fi
 
 cd "$HOME/core-bridgechain"
-HAS_REMOTE=$(git branch -a | fgrep -o "remotes/origin/chore/bridgechain-changes")
+HAS_REMOTE=$(git branch -a | fgrep -o "remotes/origin/update/2.5.24")
 if [ ! -z "$HAS_REMOTE" ]; then
-    git checkout chore/bridgechain-changes
+    git checkout update/2.5.24
 fi
 
 YARN_SETUP="N"
